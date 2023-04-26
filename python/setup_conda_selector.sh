@@ -36,5 +36,5 @@ fi
 INFO "fzf is installed."
 
 # Update .bashrc
-curl -sSL https://raw.githubusercontent.com/acshana/preload-scripts/main/python/setup_conda_selector.sh >> ~/.bashrc
+curl -sSL https://raw.githubusercontent.com/acshana/preload-scripts/main/python/conda_selector_env >> ~/.bashrc
 source ~/.bashrc

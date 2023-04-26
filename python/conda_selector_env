@@ -1,0 +1,6 @@
+# Conda environment selector using fzf
+function cda() {
+  source $(conda info --base)/etc/profile.d/conda.sh
+  conda activate $(conda info --envs | awk '{print $1}' | tail -n +2 | fzf)
+}
+alias cdd='conda deactivate'
