@@ -23,7 +23,8 @@ INFO() {
 if ! command -v fzf > /dev/null 2>&1; then
     INFO "fzf is not installed. Installing fzf now ..."
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    ~/.fzf/install --all --no-bash --no-fish
+    ~/.fzf/install
+    source ~/.bashrc
 fi
 
 # Check if fzf command is installed
